@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- 
+    Simple shopping website with single item and a shopping cart
+ -->
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Clothing Site</title>
+</head>
+
+<body>
+    <!-- Header contains a button that when hovered over will show the shopping cart -->
+    <header class="header">  
+        <div class="cart-wrapper">
+            <button class="button-cart">My Cart (<span id="cartCount">2</span>)
+<!-- Shopping Cart dropdown -->
+                <div class="cart-dropdown">
+                    <!-- Item 1 -->
+                    <div class="cart-item">
+                        <div class="cart-image">
+                            <img class="cart-item-img" src="img/classic-tee.jpg" alt="image of item in cart">
+                        </div>
+                        <div class="cart-text">
+                            <p>Classic Tee</p>
+                            <p>1x <strong>$75.00</strong></p> 
+                            <p>Size: S</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="cart-item">
+                        <div class="cart-image">
+                            <img class="cart-item-img" src="img/classic-tee.jpg" alt="image of item in cart">
+                        </div>
+                        <div class="cart-text">
+                            <p>Classic Tee</p>
+                            <p>2x <strong>$75.00</strong></p> 
+                            <p>Size: L</p>
+                        </div>
+                    </div>
+                </div>
+            </button>           
+        </div>     
+    </header>
+    </div>   
+<div class="body">
+    <!-- Container to hold and format the item on the page -->
+    <div class="item-container">
+        <!-- row class is used to place the image and item details next to each other -->
+            <div class="row">
+                <div class="column" >
+                    <img class="item-img" src="img/classic-tee.jpg" alt="image of item">         
+                </div>
+                <!-- Item details and image -->
+                <div class="column">
+                    <h1>Classic Tee</h1>
+                    <h2>$75.00</h2>  
+                    <p>Item description can go here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin odio mauris, ornare dapibus placerat ac, ornare ac velit. Aenean elit lectus, eleifend consectetur porta non, eleifend ac nunc. Nulla tincidunt tortor vel eleifend sagittis. Nam lacinia neque eu ultricies sodales.</p>
+                    <p><b>SIZE<span style="color: #C90000">*  </span><span id="selected-size"></span></b></p>
+                    <!-- Buttons for selected item size -->
+                    <button type="button" class="button-size" id="buttonSizeS">S</button>
+                    <button type="button" class="button-size" id="buttonSizeM">M</button>
+                    <button type="button" class="button-size" id="buttonSizeL">L</button>
+                    <br>
+                    <!-- Button for adding the item to the cart -->
+                    <button type="button" class="button-add-cart">add to cart</button>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+<!-- Adds script to display clothing size selected -->
+<script src="js/itemSize.js"></script>
+</html>
